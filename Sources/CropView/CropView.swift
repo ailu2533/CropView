@@ -35,14 +35,14 @@ public struct CropView: UIViewControllerRepresentable {
     // MARK: Internal
 
     public struct CroppedRect {
-        let rect: CGRect
-        let angle: Int
+        public let rect: CGRect
+        public let angle: Int
     }
 
     public struct CroppedImage {
-        let image: UIImage
-        let rect: CGRect
-        let angle: Int
+        public let image: UIImage
+        public let rect: CGRect
+        public let angle: Int
     }
 
     public class Coordinator: NSObject, CropViewControllerDelegate {
